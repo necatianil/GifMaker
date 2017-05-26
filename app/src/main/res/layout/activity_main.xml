@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    >
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/preview">
+
+    <SurfaceView android:id="@+id/CameraView"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView android:id="@+id/CountDownTextView"
+        android:text="0"
+        android:textSize="100dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|center_horizontal|center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"/>
+
+
+    </RelativeLayout>
+
+
+    <ImageButton android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CountDownButton"
+        android:src="@drawable/capture_icon"
+        android:background="@null"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/preview"
+        android:layout_marginTop="50dp"
+        />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/preview"
+        android:layout_alignBottom="@+id/preview"
+        >
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/swapbtn"
+        android:onClick="SwapClick"
+        android:layout_gravity="right"
+        android:src="@drawable/cam_icon"
+        android:background="@null"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        />
+
+    </LinearLayout>
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/speed_spinner"
+        android:layout_toEndOf="@+id/CountDownButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="100dp"
+        />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/resolution_spinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/CountDownButton"
+        android:layout_marginBottom="100dp"/>
+
+
+</RelativeLayout>

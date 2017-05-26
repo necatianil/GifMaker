@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">AndroidLivePhoto</string>
+    <string name="title_activity_result_viewer">ResultViewer</string>
+
+    <string-array name="speed">
+        <item>x0.5</item>
+        <item>x1</item>
+        <item>x2</item>
+        <item>x4</item>
+    </string-array>
+
+    <string-array name="resolution">
+        <item>320x240</item>
+        <item>640x480</item>
+        <item>1280x960</item>
+    </string-array>
+</resources>
